@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "387edaf9-2eed-4e04-abf9-211c821705eb",
+		"name": "GO-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "23263391"
+	},
+	"item": [
+		{
+			"name": "GetProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/products"
+			},
+			"response": []
+		},
+		{
+			"name": "GetProductById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/product/14"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Zevi\",\r\n    \"price\": 70\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/create"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProductById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8000/delete/7"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProduct",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_product\": 14,\r\n    \"name\": \"Arroz\",\r\n    \"price\": 150\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/update"
+			},
+			"response": []
+		}
+	]
+}
